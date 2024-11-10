@@ -8,6 +8,7 @@ class CadCentroDeCustos(models.Model):
     ativo = models.BooleanField(default=True)
     created_at = models.DateField(auto_now_add=True)
     updated_at = models.DateField(auto_now=True)
+    user_id = models.IntegerField(blank=True, null=True)
 
     def __str__(self):
         return self.nome

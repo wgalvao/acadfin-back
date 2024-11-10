@@ -6,4 +6,4 @@ class CadCentroDeCustosSerializer(serializers.ModelSerializer):
     class Meta:
         model = CadCentroDeCustos
         fields = ['id', 'nome', 'descricao', 'codigo',
-                  'ativo', 'created_at', 'updated_at']
+                  'ativo', 'created_at', 'updated_at', 'user_id']

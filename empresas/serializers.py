@@ -3,12 +3,13 @@ from rest_framework import serializers
 from .models import Empresa
 import re
 
+
 class EmpresaSerializer(serializers.ModelSerializer):
     class Meta:
         model = Empresa
         fields = [
             'cod_empresa', 'nome_razao', 'cnpj', 'endereco', 'numero',
-            'bairro', 'cidade', 'estado', 'cep', 'telefone', 'email', 'preposta'
+            'bairro', 'cidade', 'estado', 'cep', 'telefone', 'email', 'preposta', 'user_id'
         ]
 
     # def validate_cnpj(self, value):
