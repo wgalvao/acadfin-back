@@ -55,7 +55,8 @@ INSTALLED_APPS = [
     'empresas',
     'sindicatos',
     'servicos',
-    'centro_de_custos'
+    'centro_de_custos',
+    'cargos'
 ]
 
 REST_AUTH = {

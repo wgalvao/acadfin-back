@@ -27,4 +27,5 @@ urlpatterns = [
     path('api/', include('sindicatos.urls')),
     path('api/', include('servicos.urls')),
     path('api/', include('centro_de_custos.urls')),
+    path('api/', include('cargos.urls')),
 ]
