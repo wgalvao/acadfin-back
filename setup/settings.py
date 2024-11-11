@@ -62,7 +62,8 @@ INSTALLED_APPS = [
     'base_calculo',
     'clientes',
     'fornecedores',
-    'contas'
+    'contas',
+    'aliquotas'
 ]
 
 REST_AUTH = {
