@@ -30,4 +30,5 @@ urlpatterns = [
     path('api/', include('cargos.urls')),
     path('api/', include('funcoes.urls')),
     path('api/', include('jornadas.urls')),
+    path('api/', include('base_calculo.urls')),
 ]

@@ -58,7 +58,8 @@ INSTALLED_APPS = [
     'centro_de_custos',
     'cargos',
     'funcoes',
-    'jornadas'
+    'jornadas',
+    'base_calculo',
 ]
 
 REST_AUTH = {
