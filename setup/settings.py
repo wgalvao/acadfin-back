@@ -60,7 +60,8 @@ INSTALLED_APPS = [
     'funcoes',
     'jornadas',
     'base_calculo',
-    'clientes'
+    'clientes',
+    'fornecedores',
 ]
 
 REST_AUTH = {
