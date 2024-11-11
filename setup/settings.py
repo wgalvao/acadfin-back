@@ -62,6 +62,7 @@ INSTALLED_APPS = [
     'base_calculo',
     'clientes',
     'fornecedores',
+    'contas'
 ]
 
 REST_AUTH = {

@@ -33,4 +33,5 @@ urlpatterns = [
     path('api/', include('base_calculo.urls')),
     path('api/', include('clientes.urls')),
     path('api/', include('fornecedores.urls')),
+    path('api/', include('contas.urls')),
 ]
