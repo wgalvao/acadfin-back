@@ -1,11 +1,14 @@
 from django.db import models
 
+
 class Empresa(models.Model):
-    cod_empresa = models.AutoField(primary_key=True)
+    id = models.AutoField(primary_key=True)
     # nome_razao = models.CharField(max_length=255)  # Mantido obrigatório
-    nome_razao = models.CharField(max_length=255, blank=True, null=True)  # Mantido obrigatório
+    nome_razao = models.CharField(
+        max_length=255, blank=True, null=True)  # Mantido obrigatório
     # cnpj = models.CharField(max_length=55, unique=True)  # Mantido obrigatório
-    cnpj = models.CharField(max_length=55, blank=True, null=True)  # Mantido obrigatório
+    cnpj = models.CharField(max_length=55, blank=True,
+                            null=True)  # Mantido obrigatório
     endereco = models.CharField(max_length=255, blank=True, null=True)
     numero = models.CharField(max_length=10, blank=True, null=True)
     bairro = models.CharField(max_length=40, blank=True, null=True)

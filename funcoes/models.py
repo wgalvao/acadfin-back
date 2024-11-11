@@ -1,10 +1,13 @@
 from django.db import models
 
+from empresas.models import Empresa
+
 
 class Funcao(models.Model):
     id = models.AutoField(primary_key=True)
     nome = models.CharField(max_length=150)
-    empresa = models.IntegerField()
+    empresa = models.ForeignKey(
+        Empresa, on_delete=models.CASCADE)
     codva = models.IntegerField()
     codvp = models.IntegerField()
     codvt = models.IntegerField()
