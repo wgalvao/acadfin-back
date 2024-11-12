@@ -63,7 +63,8 @@ INSTALLED_APPS = [
     'clientes',
     'fornecedores',
     'contas',
-    'aliquotas'
+    'aliquotas',
+    'acumuladores'
 ]
 
 REST_AUTH = {
