@@ -65,7 +65,8 @@ INSTALLED_APPS = [
     'contas',
     'aliquotas',
     'acumuladores',
-    'cfops'
+    'cfops',
+    'plano_contas',
 ]
 
 REST_AUTH = {

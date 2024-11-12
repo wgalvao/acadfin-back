@@ -37,4 +37,5 @@ urlpatterns = [
     path('api/', include('aliquotas.urls')),
     path('api/', include('acumuladores.urls')),
     path('api/', include('cfops.urls')),
+    path('api/', include('plano_contas.urls')),
 ]
