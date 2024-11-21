@@ -1,4 +1,5 @@
 from django.db import models
+from empresas.models import Empresa
 
 
 class Funcionario(models.Model):
@@ -11,6 +12,8 @@ class Funcionario(models.Model):
     idade = models.IntegerField(verbose_name="Idade", blank=True, null=True)
     sexo = models.CharField(
         max_length=1, verbose_name="Sexo", blank=True, null=True)
+    empresa = models.ForeignKey(
+        Empresa, on_delete=models.CASCADE)
     escolaridade = models.CharField(max_length=55, blank=True, null=True)
     ctps = models.CharField(max_length=30, blank=True, null=True)
     serie = models.CharField(max_length=15, blank=True, null=True)
