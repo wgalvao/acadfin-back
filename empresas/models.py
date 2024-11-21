@@ -1,4 +1,5 @@
 from django.db import models
+from clientes.models import Cliente
 
 
 class Empresa(models.Model):
@@ -9,6 +10,8 @@ class Empresa(models.Model):
     # cnpj = models.CharField(max_length=55, unique=True)  # Mantido obrigatório
     cnpj = models.CharField(max_length=55, blank=True,
                             null=True)  # Mantido obrigatório
+    cliente = models.ForeignKey(
+        Cliente, on_delete=models.CASCADE)
     endereco = models.CharField(max_length=255, blank=True, null=True)
     numero = models.CharField(max_length=10, blank=True, null=True)
     bairro = models.CharField(max_length=80, blank=True, null=True)
