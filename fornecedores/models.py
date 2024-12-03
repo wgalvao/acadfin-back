@@ -9,7 +9,7 @@ class Fornecedor(models.Model):
     observacao = models.TextField(blank=True, null=True)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
-    user_id = models.IntegerField(blank=True, null=True)
+    user_id = models.IntegerField()
     # user_id = models.ForeignKey(User, on_delete=models.CASCADE, related_name='fornecedores')
 
     def __str__(self):

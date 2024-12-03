@@ -7,4 +7,6 @@ router.register(r'fornecedores', FornecedorViewSet)
 
 urlpatterns = [
     path('', include(router.urls)),
+    path('fornecedores/user/<int:user_id>/',
+         FornecedorViewSet.as_view({'get': 'list_by_user'}), name='fornecedor-list-by-user'),
 ]
