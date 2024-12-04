@@ -7,4 +7,6 @@ router.register(r'plano-contas', PlanoContasViewSet)
 
 urlpatterns = [
     path('', include(router.urls)),
+    path('plano-contas/user/<int:user_id>/',
+         PlanoContasViewSet.as_view({'get': 'list_by_user'}), name='plano-conta-list-by-user'),
 ]

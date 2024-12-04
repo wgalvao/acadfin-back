@@ -7,4 +7,6 @@ router.register(r'jornadas', JornadaViewSet)
 
 urlpatterns = [
     path('', include(router.urls)),
+    path('jornadas/user/<int:user_id>/',
+         JornadaViewSet.as_view({'get': 'list_by_user'}), name='jornadas-list-by-user'),
 ]

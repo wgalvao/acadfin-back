@@ -7,4 +7,6 @@ router.register(r'aliquotas', AliquotaViewSet)
 
 urlpatterns = [
     path('', include(router.urls)),
+    path('aliquotas/user/<int:user_id>/',
+         AliquotaViewSet.as_view({'get': 'list_by_user'}), name='aliquota-list-by-user'),
 ]
