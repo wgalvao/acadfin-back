@@ -67,6 +67,7 @@ INSTALLED_APPS = [
     'acumuladores',
     'cfops',
     'plano_contas',
+    'dashboard'
 ]
 
 REST_AUTH = {

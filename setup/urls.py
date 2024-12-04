@@ -38,4 +38,5 @@ urlpatterns = [
     path('api/', include('acumuladores.urls')),
     path('api/', include('cfops.urls')),
     path('api/', include('plano_contas.urls')),
+    path('api/', include('dashboard.urls')),  # Adicione esta linha
 ]
