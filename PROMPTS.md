@@ -44,3 +44,7 @@ urlpatterns = [
 ```
 
 Altere os FornecedorViewSet pelo ViewSet correspondente e em name='fornecedor-list-by-user' troque fornecedor pelo nome correspondente da pasta
+
+# Preparação para código inteiro
+
+Escreva um script em bash que leia todas os diretórios e arquivos .py. Ao final gere um arquivo .md que possua o caminho completo para cada arquivo e o código .py dentro de cada arquivo Além da estrutura do projeto.
