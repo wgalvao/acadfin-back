@@ -7,7 +7,7 @@ class FornecedorSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Fornecedor
-        fields = ['id', 'pessoa_id', 'desde', 'observacao',
+        fields = ['id', 'nome', 'desde', 'observacao',
                   'created_at', 'updated_at', 'user_id',]
 
     # def create(self, validated_data):

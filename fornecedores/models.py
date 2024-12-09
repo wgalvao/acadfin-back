@@ -4,7 +4,7 @@ from django.contrib.auth.models import User
 
 class Fornecedor(models.Model):
     id = models.AutoField(primary_key=True)
-    pessoa_id = models.IntegerField()
+    nome = models.CharField(max_length=255, blank=True, null=True)
     desde = models.DateField()
     observacao = models.TextField(blank=True, null=True)
     created_at = models.DateTimeField(auto_now_add=True)
