@@ -26,4 +26,18 @@ urlpatterns = [
     path('api/', include('empresas.urls')),  # Inclui as rotas da aplicação
     path('api/', include('sindicatos.urls')),
     path('api/', include('servicos.urls')),
+    path('api/', include('centro_de_custos.urls')),
+    path('api/', include('cargos.urls')),
+    path('api/', include('funcoes.urls')),
+    path('api/', include('jornadas.urls')),
+    path('api/', include('base_calculo.urls')),
+    path('api/', include('clientes.urls')),
+    path('api/', include('fornecedores.urls')),
+    path('api/', include('contas.urls')),
+    path('api/', include('aliquotas.urls')),
+    path('api/', include('acumuladores.urls')),
+    path('api/', include('cfops.urls')),
+    path('api/', include('plano_contas.urls')),
+    path('api/', include('dashboard.urls')),  
+    path('api/', include('calculos.urls')),
 ]
