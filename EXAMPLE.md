@@ -14,6 +14,19 @@ $ curl -XPOST -H "Content-type: application/json" -d '{
   }' 'http://localhost:8000/api/auth/token/verify/' | jq
 ```
 
+## Centro de custos
+
+```
+curl -X POST http://127.0.0.1:8000/api/centro-de-custos/ \
+-H "Content-Type: application/json" \
+-d '{
+    "nome": "Centro de Custos A",
+    "descricao": "Descrição do Centro de Custos A",
+    "codigo": "CC001",
+    "ativo": true
+}'
+```
+
 ## Servicos
 
 ```

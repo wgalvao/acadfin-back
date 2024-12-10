@@ -111,3 +111,6 @@ gunicorn*.log
 # pipenv, poetry, virtualenvs
 Pipfile.lock
 poetry.lock
+
+# My utils
+*.sh

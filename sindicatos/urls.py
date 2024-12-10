@@ -7,4 +7,6 @@ router.register(r'sindicatos', CadSindicatoViewSet)
 
 urlpatterns = [
     path('', include(router.urls)),
+    path('sindicatos/user/<int:user_id>/',
+         CadSindicatoViewSet.as_view({'get': 'list_by_user'}), name='sindicato-list-by-user'),
 ]

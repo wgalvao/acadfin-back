@@ -54,7 +54,21 @@ INSTALLED_APPS = [
     'funcionarios',
     'empresas',
     'sindicatos',
-    'servicos'
+    'servicos',
+    'centro_de_custos',
+    'cargos',
+    'funcoes',
+    'jornadas',
+    'base_calculo',
+    'clientes',
+    'fornecedores',
+    'contas',
+    'aliquotas',
+    'acumuladores',
+    'cfops',
+    'plano_contas',
+    'dashboard',
+    'calculos'
 ]
 
 REST_AUTH = {
